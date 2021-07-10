@@ -1231,20 +1231,40 @@ img {
 }
 
 .slider-buttons {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style: none;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
   margin-right: -8px;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-buttons {
+    margin-bottom: 40px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider-buttons {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons-box {
   display: block;
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .buttons-box__button {
@@ -1278,16 +1298,27 @@ img {
   display: none;
 }
 
-.portfolio-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-  -ms-flex-preferred-size: calc(100%/3 - 30px);
-      flex-basis: calc(100%/3 - 30px);
+@media screen and (min-width: 768px) {
+  .portfolio-box {
+    max-width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    -ms-flex-preferred-size: calc(100%/2 - 30px);
+        flex-basis: calc(100%/2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-box {
+    max-width: 1600px;
+    -ms-flex-preferred-size: calc(100%/3 - 30px);
+        flex-basis: calc(100%/3 - 30px);
+  }
 }
 
 .portfolio-box__card-list {
@@ -1297,7 +1328,7 @@ img {
   text-align: left;
   margin-top: 30px;
   margin-left: 30px;
-  width: 370px;
+  max-width: 354px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -1323,9 +1354,23 @@ img {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-box__card-list {
+    -ms-flex-preferred-size: calc(100%/2 - 30px);
+        flex-basis: calc(100%/2 - 30px);
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-box__card-list {
+    -ms-flex-preferred-size: calc(100%/3 - 30px);
+        flex-basis: calc(100%/3 - 30px);
+  }
+}
+
 .portfolio-box__card-heading {
   display: block;
-  width: 370px;
 }
 
 .portfolio-box__overlay-box {

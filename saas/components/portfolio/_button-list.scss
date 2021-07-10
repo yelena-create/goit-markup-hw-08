@@ -5,16 +5,27 @@
 }
 
 .slider-buttons {
-  display: flex;
-  justify-content: center;
   list-style: none;
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 30px;
   margin-right: -8px;
+  @media screen and (min-width: 768px){
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 1200px){
+      margin-bottom: 50px;
+    }
+
 }
 .buttons-box{
   display: block;
   margin-right: 8px;
-
+margin-bottom: 15px;
 }
 .buttons-box__button {
   display: block;
