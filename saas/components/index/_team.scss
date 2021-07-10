@@ -1,0 +1,111 @@
+
+.team {
+  background-color: #f5f4fa;
+    @media screen and (min-width: 480px){
+    max-width: 480px;
+  }
+    @media screen and (min-width: 768px){
+    max-width: 768px;
+  }
+
+    @media screen and (min-width: 1200px){
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+
+}
+.team-card__list {
+  @media screen and (min-width: 480px){
+  }
+    @media screen and (min-width: 768px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .team-card__card:nth-child(2n+1){
+        margin-right: 30px;
+    }
+  }
+ 
+    @media screen and (min-width: 1200px){
+      display: flex;
+      flex-wrap: nowrap;
+      .team-card__card:not(:last-child) {
+        margin-right: 30px;
+          }
+      // & __img{
+      //       width: 270px;
+      //     }    
+
+  }
+}
+.team-card__card {
+  border-bottom: 1px solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  margin-bottom: 30px;
+      @media screen and (min-width: 768px){
+    max-width: 768px;
+    flex-basis: calc(100%/2 - 30px);
+  }
+
+
+}
+.team-card__wrapper {
+  margin: auto;
+  padding: 30px 0;
+  background-color: $background-color;
+  &.title-name{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  &.text{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+.team__social {
+  margin-top: 16px;
+}
+.team__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  fill: #afb1b8;
+  background-color: $background-color;
+  & .button-icons,
+  & .button-icons {
+  fill: #afb1b8;
+  transition: fill $time $cubic;
+  }
+}
+.button-social {
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  transition: background-color $time $cubic;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    outline: none;
+  }
+  &:hover .button-icons,
+  &:focus .button-icons {
+    fill: $background-color;
+
+  }
+}
+.team__social-item .button-social,
+.footer__social-item .button-social {
+  text-align: center;
+  padding: 12px;
+  margin: 0 12px 0 0;
+  border-radius: 50%;
+}

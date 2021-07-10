@@ -1,0 +1,27 @@
+ @mixin font-source ($size: false, $color: false, $weight:False, $lh: false, $ls: false){
+    @if $size {
+    font-size: $size;
+    }
+    @if $color {
+    color: $color;
+    }
+    @if $weight {
+    weight: $weight;
+    }
+    @if $lh {
+    line-height: $lh;
+    }
+    @if $ls {
+    letter-spacing: $ls;
+    }
+  }
+// @include font-source (14px, $main-text-color, normal, 1.714, 0.03em)
+
+    @media screen and (min-width: 480px){
+    }
+
+    @media screen and (min-width: 768px){
+    }
+
+    @media screen and (min-width: 1200px){
+    }
