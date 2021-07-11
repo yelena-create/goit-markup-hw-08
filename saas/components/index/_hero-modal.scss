@@ -20,13 +20,18 @@
   position: absolute;
   top: 50%;
   left: 50%;
+   width: 450px;
+   height: 609px;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: $background-color;
   /* padding: 8px; */
   transition: transform $time $cubic;
   color: $main-text-color;
+  @media screen and (min-width: 1200px){
+        width: 528px;
+        height: 581px;
+    }
+
 }
 .modal__close {
   position: absolute;
@@ -50,9 +55,13 @@
 //   padding: 4px;
 
 .modal__form {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+   height: 609px;
   padding: 40px;
+  @media screen and (min-width: 1200px){
+        width: 528px;
+        height: 581px;
+    }
 
 }
 .form__title {
@@ -147,10 +156,17 @@
 .form__label-policy {
   display: flex;
   flex-direction: row;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
-  padding-left: 25px;
+    padding-left: 20px;
+
+  @media screen and (min-width: 1200px){
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 25px;
+    }
+
 }
 .checkbox__hidden {
   position: absolute;
@@ -166,7 +182,7 @@
 
 .icon-check {
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 10px;
   content: '';
   display: inline-block;
@@ -176,6 +192,11 @@
   margin-right: 10px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
+    @media screen and (min-width: 1200px){
+    top: 5px;
+    }
+
+
 }
 .checkbox:checked + .icon-check {
   background-color: $accent-color;

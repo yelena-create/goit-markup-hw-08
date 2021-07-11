@@ -393,10 +393,10 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 450px;
+  height: 609px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   /* padding: 8px; */
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -404,6 +404,13 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close {
@@ -429,9 +436,16 @@ header {
 }
 
 .modal__form {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .form__title {
@@ -545,10 +559,18 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
-  padding-left: 25px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__label-policy {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 25px;
+  }
 }
 
 .checkbox__hidden {
@@ -565,7 +587,7 @@ header {
 
 .icon-check {
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 10px;
   content: '';
   display: inline-block;
@@ -575,6 +597,12 @@ header {
   margin-right: 10px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-check {
+    top: 5px;
+  }
 }
 
 .checkbox:checked + .icon-check {
