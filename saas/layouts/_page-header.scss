@@ -5,7 +5,10 @@ header{
   position: relative;
   height: 80px;
   padding: 0 15px;
+  padding-top: 26px;
+  
   @media screen and (min-width: 768px){
+    padding-top: 0;
         max-width: 768px;
         display: flex;
         justify-content: space-between;
@@ -13,6 +16,7 @@ header{
   }
       @media screen and (min-width: 1200px){
     max-width: 1200px;
+    justify-content: space-evenly;
 
 }
 }
@@ -21,16 +25,37 @@ header{
   font-family: $accent-font;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 28px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  @media screen and (min-width: 768px){
+    font-size: 26px;
+    margin-right: 85px;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px){
+          margin-right: 93px;
+    }
+
 }
 
 .logo__text-color {
   color: $accent-color;
   }
+.menu-open{
+  position: absolute;
+  top: 10px;
+  right: 0;
+      @media screen and (min-width: 768px){
+        display: none;
+  }
+}
 
+// .menu-open-icon{
+//   fill: #000000;
+  
+// }
   .header__button{
     position: absolute;
     top: 0;
@@ -54,6 +79,14 @@ position: relative;
 .container__nav-link {
   display: flex;
   align-items: center;
+   display: none;
+   @media screen and (min-width: 768px){
+     display: table;
+    //  margin: 0 auto;
+    }
+    @media screen and (min-width: 1200px){
+    }
+
 }
 .container__nav {
   display: flex;
@@ -62,7 +95,7 @@ position: relative;
 }
 .link {
   position: relative;
-  color: $menu-color;
+  color: $main-text-color;
   font-weight: 500;
   text-decoration: none;
   transition: color $time $cubic;
@@ -75,6 +108,7 @@ position: relative;
   fill: $accent-color;}
 }
 .link-current {
+  box-sizing: border-box;
   color: $accent-color;
   &::after {
   position: absolute;
@@ -88,30 +122,45 @@ position: relative;
   border-radius: 2px;}
   }
 
-.contacts {
+.container__contacts {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  display: none;
   &__link {
-  margin: 0;
-  border: 0;
-  align-items: flex-end;
-  &:hover,
-  &:focus{
-  color: $accent-color;} 
- }
- &--header{
-   margin-left: auto;
- }
+    margin: 0;
+    border: 0;
+    align-items: flex-end;}
+    &:hover,
+    &:focus{
+      color: $accent-color;} 
+      &--header{
+        margin-left: auto;}
+@media screen and (min-width: 768px){
+  display: table;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+@media screen and (min-width: 1200px){
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+    }
+ }
+
 .link-contact{
   color: $main-text-color;
 }
 .contacts__link-phone {
+  margin-left: 0;
+@media screen and (min-width: 1200px){
   margin-left: 50px;
 }
-
+}
 .button-icon {
    margin-right: 10px;
   fill: $main-text-color;
   transition: fill $time $cubic;
+  
 }

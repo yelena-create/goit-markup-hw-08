@@ -23,6 +23,62 @@
             <span  class="header__secondary-color">Studio</span></a
           >
         </div>
+        <button class="menu-open" type="button" menu-open>
+          <svg class="menu-open-icon"
+           width="40"
+          height="40">
+          <use href="./image/menu.svg"></use>
+          </svg>
+        </button>
+        <!-- mobile-menu -->
+        <div class="backdrop is-hidden" mobile-nav>
+            <div class="mobile-menu">
+              <button class="menu__close" menu-close type="button-close">
+                &#10006;
+              </button>
+              
+                  <ul class="mobile__nav">
+                    <li class="mobile__nav-item">
+                      <a href="./index.html" class="link link-current-mobile link-mobile ">Студия</a>
+                    </li>
+                    <li class="mobile__nav-item">
+                      <a href="./portfolio.html" class="link link-mobile">Портфолио</a>
+                    </li>
+                    <li class="mobile__nav-item">
+                      <a href="./contacts.html" class="link link-mobile">Контакты</a>
+                    </li>
+                  </ul>
+                
+                <ul class="contacts contacts__mobile">                  
+                  <li class="contacts__mobile-link-phone">
+                    <a href="tel:+380961111111" class="link--mobile ">
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                   <li class="contacts__link-mail">
+                    <a href="mailyo:info@devstudio.com" class="link ">
+                      info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-social">
+                     <li class="mobile-social__item">
+                      <a class="mobile-social__link" href="">Instagram</a>
+                    </li>
+                     <li class="mobile-social__item">
+                      <a class="mobile-social__link" href="">Twitter</a>
+                    </li>
+                     <li class="mobile-social__item">
+                      <a class="mobile-social__link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                      <a class="mobile-social__link" href="">LinkedIn</a>
+                    </li>
+                  </ul>
+
+            </div>
+        </div>
+        <!-- --------------------------- -->
         <nav class="container__nav-link">
           <ul class="container__nav">
             <li class="container__nav-item">
@@ -36,7 +92,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts contacts--header">
+        <ul class="contacts container__contacts container__contacts--header">
           <li class="contacts__link">
             <a href="mailyo:info@devstudio.com" class="link ">
               <svg class="button-icon" width="16" height="12">
@@ -551,6 +607,8 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
+
   </body>
 </html>
 
