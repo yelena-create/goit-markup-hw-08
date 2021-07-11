@@ -1,5 +1,6 @@
 .backdrop {
-  position: fixed;
+  z-index: 999;
+ position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -12,7 +13,6 @@
   pointer-events: none;
 }
 }
-
 .backdrop.is-hidden .modal {
   transform: scale(1) translate(-50%, -50%);
 }
@@ -27,7 +27,6 @@
   /* padding: 8px; */
   transition: transform $time $cubic;
   color: $main-text-color;
-  /* z-index: 999; */
 }
 .modal__close {
   position: absolute;
@@ -49,11 +48,12 @@
 //   width: 18px;
 //   height: 18px;
 //   padding: 4px;
-// }
+
 .modal__form {
   width: 528px;
   height: 581px;
   padding: 40px;
+
 }
 .form__title {
   margin: 0;
