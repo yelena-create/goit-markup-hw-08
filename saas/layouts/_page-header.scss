@@ -1,4 +1,6 @@
 .header{
+    border-bottom: 1px solid #ececec;
+
   @media screen and (min-width: 480px){
     max-width: 480px;
   }
@@ -10,7 +12,6 @@
     max-width: 1200px;
   }
 
-  border-bottom: 1px solid #ececec;
 }
 .container__header {
   position: relative;
@@ -21,7 +22,6 @@
         justify-content: space-between;
         align-items: center;
   }
-
 }
 
 .logo__text {
