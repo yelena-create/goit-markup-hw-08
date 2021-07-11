@@ -251,8 +251,8 @@ oppo
                 <source
                 media="(min-width:1200px)"
                 srcset="
-                ../images/index/work/box1.jpg 1x,
-                ../images/index/work/box1-2-min.jpg 2x
+                ../image/index/work/box1.jpg 1x,
+                ../image/index/work/box1-2-min.jpg 2x
                 ">
                 <img
                 src="./image/index/img1.jpg"
@@ -266,21 +266,38 @@ oppo
               </div>
             </li>
             <li class="business__image-box">
-              <img
-                src="./image/index/img2.jpg"
-                alt="адаптация для всех мобильных устройств"
-                width="370"
-              />
+              <picture>
+                <source 
+                media="(min-width:768px)"
+                srcset="
+                ../image/index/work/box2.jpg 1x,
+                ../image/index/work/box2-2-min.jpg 2x"
+                >
+                <img
+                  src="./image/index/img2.jpg"
+                  alt="адаптация для всех мобильных устройств"
+                  width="370"
+                />
+                
+              </picture>
               <div class="business__text-box">
                 <p>Мобильные приложения</p>
               </div>
             </li>
             <li class="business__image-box">
-              <img
-                src="./image/index/img3.jpg"
-                alt="подбор цветовой палитры"
-                width="370"
-              />
+              <picture>
+                <source 
+                media="(min-width:768px)"
+                srcset="
+                ../image/index/work/box3.jpg 1x,
+                ../image/index/work/box3-2-min.jpg 2x"
+                >
+                <img
+                  src="./image/index/img3.jpg"
+                  alt="подбор цветовой палитры"
+                  width="370"
+                />
+              </picture>
               <div class="business__text-box">
                 <p>Дизайнерские решения</p>
               </div>
@@ -294,12 +311,29 @@ oppo
           <h2 class="title">Наша команда</h2>
           <ul class="team-card__list">
             <li class="team-card__card">
-              <img
-                class="img"
-                src="./image/index/igor-demianenko.jpg"
-                alt="Игорь Демьяненко"
-                width="450"
-              />
+              <picture>
+                <source
+                media="(min-width:1200px)"
+                srcset="../image/index/team/team-img1-desktop.jpg 1x,
+                ../image/index/team/team-img1-desktop2-min.jpg 2x"
+                >
+                <source
+                media="(min-width:768px)"
+                srcset="../image/index/team/team-img1-tablet.jpg 1x,
+                ../image/index/team/team-img1-tablet2-min.jpg 2x"
+                >
+                <source
+                media="(min-width:480px)"
+                srcset="../image/index/team/team-img1-mobil.jpg 1x,
+                ../image/index/team/team-img1-mobil-2x-min.jpg 2x"
+                >
+                <img
+                  class="img"
+                  src="./image/index/igor-demianenko.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                />
+              </picture>
               <div class="team-card__wrapper">
                 <h3 class="team-card__title-name">Игорь Демьяненко</h3>
                 <p class="team-card__text">Product Designer</p>
@@ -338,12 +372,29 @@ oppo
               </div>
             </li>
             <li class="team-card__card">
-              <img
-                class="img"
-                src="./image/index/olga-repina.jpg"
-                alt="Ольга Репина"
-                width="450"
-              />
+              <picture>
+                <source
+                media="(min-width:1200px)"
+                srcset="../image/index/team/teamcard2-desktop.jpg 1x,
+                ../image/index/team/teamcard2-desktop2-min.jpg 2x"
+                >
+                <source
+                media="(min-width:768px)"
+                srcset="../image/index/team/teamcard2-tablet.jpg 1x,
+                ../image/index/team/teamcard2-tablet2-min.jpg 2x"
+                >
+                <source
+                media="(min-width:480px)"
+                srcset="../image/index/team/teamcard2-mobil.jpg 1x,
+                ../image/index/team/teamcard2-mobil-2x-min.jpg 2x"
+                >
+                <img
+                  class="img"
+                  src="./image/index/olga-repina.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                />
+              </picture>
               <div class="team-card__wrapper">
                 <h3 class="team-card__title-name">Ольга Репина</h3>
                 <p class="team-card__text">Frontend Developer</p>
@@ -382,12 +433,29 @@ oppo
               </div>
             </li>
             <li class="team-card__card">
-              <img
-                class="img"
-                src="./image/index/nikolay-tarasov.jpg"
-                alt="Николай Тарасов"
-                width="450"
-              />
+              <picture>
+                <source
+                media="(min-width:1200px)"
+                srcset="../image/index/team/teamcard3-desktop.jpg 1x,
+                ../image/index/team/teamcard3-desktop2-min.jpg 2x"
+                >
+                <source
+                media="(min-width:768px)"
+                srcset="../image/index/team/teamcard3-tablet.jpg 1x,
+                ../image/index/team/teamcard3-tablet2-min.jpg 2x"
+                >
+                <source
+                media="(min-width:480px)"
+                srcset="../image/index/team/teamcard3-mobil.jpg 1x,
+                ../image/index/team/teamcard3-mobil-2x-min.jpg 2x"
+                >
+                <img
+                  class="img"
+                  src="./image/index/nikolay-tarasov.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                />
+              </picture>
               <div class="team-card__wrapper">
                 <h3 class="team-card__title-name">Николай Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
@@ -426,12 +494,29 @@ oppo
               </div>
             </li>
             <li class="team-card__card">
-              <img
-                class="img"
-                src="./image/index/mikhail-ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="450"
-              />
+              <picture>
+                <source
+                media="(min-width:1200px)"
+                srcset="../image/index/team/teamcard4-desktop.jpg 1x,
+                ../image/index/team/teamcard4-desktop2-min.jpg 2x"
+                >
+                <source
+                media="(min-width:768px)"
+                srcset="../image/index/team/teamcard4-tablet.jpg 1x,
+                ../image/index/team/teamcard4-tablet2-min.jpg 2x"
+                >
+                <source
+                media="(min-width:480px)"
+                srcset="../image/index/team/teamcard4-mobil.jpg 1x,
+                ../image/index/team/teamcard4-mobil-2x-min.jpg 2x"
+                >
+                <img
+                  class="img"
+                  src="./image/index/mikhail-ermakov.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                />
+              </picture>
               <div class="team-card__wrapper">
                 <h3 class="team-card__title-name">Михаил Ермаков</h3>
                 <p class="team-card__text">UI Designer</p>
