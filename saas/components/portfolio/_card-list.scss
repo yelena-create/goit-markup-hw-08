@@ -2,6 +2,18 @@
 .invisible {
   display: none;
 }
+.portfolio{ 
+  @media screen and (min-width: 480px){
+    max-width: 480px;
+  }
+    @media screen and (min-width: 768px){
+    max-width: 768px;
+  }
+
+    @media screen and (min-width: 1200px){
+    max-width: 1600px;
+  }
+}
 .portfolio-box {
   @media screen and (min-width: 768px){
     max-width: 768px;
@@ -9,13 +21,13 @@
         flex-wrap: wrap;
         margin-top: -30px;
         margin-left: -30px;
-      flex-basis: calc(100%/2 - 30px);
+      // flex-basis: calc(100%/2 - 30px);
 
     }
 
     @media screen and (min-width: 1200px){
       max-width: 1600px;
-      flex-basis: calc(100%/3 - 30px);
+      // flex-basis: calc(100%/3 - 30px);
     }
 
 }
