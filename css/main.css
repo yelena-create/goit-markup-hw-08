@@ -100,26 +100,8 @@ img {
   display: block;
 }
 
-.header {
+header {
   border-bottom: 1px solid #ececec;
-}
-
-@media screen and (min-width: 480px) {
-  .header {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    max-width: 1200px;
-  }
 }
 
 .container__header {
@@ -130,6 +112,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container__header {
+    max-width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -139,6 +122,12 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__header {
+    max-width: 1200px;
   }
 }
 
