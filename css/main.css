@@ -47,7 +47,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1600px;
+    max-width: 1200px;
   }
 }
 
@@ -1336,12 +1336,16 @@ img {
         flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+    -ms-flex-preferred-size: calc(100%/2 - 30px);
+        flex-basis: calc(100%/2 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-box {
     max-width: 1600px;
+    -ms-flex-preferred-size: calc(100%/3 - 30px);
+        flex-basis: calc(100%/3 - 30px);
   }
 }
 
@@ -1379,27 +1383,33 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-box__card-list {
+  .portfolio-box__card-list .portfolio-box__card-item {
     max-width: 370px;
+    -ms-flex-preferred-size: calc(100%/2 - 30px);
+        flex-basis: calc(100%/2 - 30px);
   }
 }
 
-.portfolio-box__card-list .portfolio-box__card-heading {
+@media screen and (min-width: 1200px) {
+  .portfolio-box__card-list .portfolio-box__card-item {
+    max-width: 1600px;
+    -ms-flex-preferred-size: calc(100%/3 - 30px);
+        flex-basis: calc(100%/3 - 30px);
+  }
+}
+
+.portfolio-box__card-heading {
   display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-box__card-list .portfolio-box__card-heading {
-    -ms-flex-preferred-size: calc(100%/2 - 30px);
-        flex-basis: calc(100%/2 - 30px);
+  .portfolio-box__card-heading {
     max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio-box__card-list .portfolio-box__card-heading {
-    -ms-flex-preferred-size: calc(100%/3 - 30px);
-        flex-basis: calc(100%/3 - 30px);
+  .portfolio-box__card-heading {
     max-width: 1600px;
   }
 }
