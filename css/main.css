@@ -1380,21 +1380,28 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio-box__card-list {
-    -ms-flex-preferred-size: calc(100%/2 - 30px);
-        flex-basis: calc(100%/2 - 30px);
     max-width: 370px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio-box__card-list {
-    -ms-flex-preferred-size: calc(100%/3 - 30px);
-        flex-basis: calc(100%/3 - 30px);
+.portfolio-box__card-list .portfolio-box__card-heading {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-box__card-list .portfolio-box__card-heading {
+    -ms-flex-preferred-size: calc(100%/2 - 30px);
+        flex-basis: calc(100%/2 - 30px);
+    max-width: 768px;
   }
 }
 
-.portfolio-box__card-heading {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .portfolio-box__card-list .portfolio-box__card-heading {
+    -ms-flex-preferred-size: calc(100%/3 - 30px);
+        flex-basis: calc(100%/3 - 30px);
+    max-width: 1600px;
+  }
 }
 
 .portfolio-box__overlay-box {
