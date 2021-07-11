@@ -23,14 +23,14 @@
             <span  class="header__secondary-color">Studio</span></a
           >
         </div>
-        <button menu-open type="button" class="button__menu">
+        <!-- <button menu-open type="button" class="button__menu">
           <svg class="button__menu--icon" width="40px" height="40x">
             <use href="./image/menu.svg"></use>
             
 oppo
           </svg>          
           
-        </button>
+        </button> -->
         <nav class="container__nav-link">
           <ul class="container__nav">
             <li class="container__nav-item">
@@ -247,11 +247,20 @@ oppo
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="business__image-list">
             <li class="business__image-box">
-              <img
+              <picture>
+                <source
+                media="(min-width:1200px)"
+                srcset="
+                ../images/index/work/box1.jpg 1x,
+                ../images/index/work/box1-2-min.jpg 2x
+                ">
+                <img
                 src="./image/index/img1.jpg"
                 alt="программирование"
                 width="370"
-              />
+                />      
+
+              </picture>
               <div class="business__text-box">
                 <p>Десктопные приложения</p>
               </div>
@@ -600,7 +609,7 @@ oppo
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script src="./js/burger.js"></script>
+    <script src="./js/menu.js"></script>
 
   </body>
 </html>

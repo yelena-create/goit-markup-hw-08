@@ -47,7 +47,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -59,13 +59,13 @@ section {
 
 @media screen and (min-width: 768px) {
   section {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   section {
-    width: 1200px;
+    max-width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -282,8 +282,8 @@ img {
   background-color: rgba(47, 48, 58, 0.4);
   color: #ffffff;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/index/hero-dg.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/hero-dg.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/index/hero/hero-mobil-2-min.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/hero/hero-mobil-2-min.jpg);
   max-width: 1600px;
   max-height: 400px;
   background-size: cover;
@@ -291,8 +291,18 @@ img {
   background-position: center;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    max-width: 1600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/index/hero/hero-tablet-2-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/hero/hero-tablet-2-min.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/index/hero-dg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/hero-dg.jpg);
     max-height: 600px;
   }
 }
