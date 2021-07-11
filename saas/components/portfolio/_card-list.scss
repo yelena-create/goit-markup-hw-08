@@ -26,8 +26,8 @@
     }
 
     @media screen and (min-width: 1200px){
-      max-width: 1600px;
-      flex-basis: calc(100%/3 - 30px);
+      max-width: 1200px;
+      // flex-basis: calc(100%/3 - 30px);
     }
 
 }
@@ -58,12 +58,9 @@
           flex-basis: calc(100%/2 - 30px);
           }
           @media screen and (min-width: 1200px){
-            max-width: 1600px;
             flex-basis: calc(100%/3 - 30px);
+          }
         }
-
-  }
-
   }
 
 .portfolio-box__card-heading {
@@ -73,7 +70,6 @@
   }
 
     @media screen and (min-width: 1200px){
-    max-width: 1600px;
   }
 
 }
