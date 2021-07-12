@@ -45,6 +45,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+      @media screen and (min-width: 768px){
+text-align: left;  }
+
 }
 .features__text {
   @include font-source (14px, $main-text-color, normal, 1.714, 0.03em)

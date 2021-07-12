@@ -1,13 +1,8 @@
 
 .team {
   background-color: #f5f4fa;
-    @media screen and (min-width: 480px){
-    max-width: 480px;
   }
-    @media screen and (min-width: 768px){
-    max-width: 768px;
-  }
-
+  .container__team{
     @media screen and (min-width: 1200px){
     max-width: 1200px;
     justify-content: space-between;
