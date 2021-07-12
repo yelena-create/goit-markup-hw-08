@@ -88,9 +88,7 @@ img {
 
 button {
   border: none;
-  display: block;
   padding: 0;
-  margin: 0;
 }
 
 ul,
@@ -172,21 +170,15 @@ header {
   top: 10px;
   right: 0;
   background-color: #fff;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .menu-open {
     display: none;
   }
-}
-
-.menu-open__icon {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .header__button {
@@ -373,6 +365,10 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
+}
+
+.mobile-menu__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,19 +378,29 @@ header {
           flex-direction: column;
 }
 
-.menu__close {
+@media screen and (min-width: 480px) {
+  .mobile-menu__wrapper {
+    max-width: 480px;
+  }
+}
+
+.menu-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  color: #212121;
-  background-color: #ffffff;
+  top: -30px;
+  right: -15px;
   border: none;
 }
 
-.menu__close:hover {
+.menu-close:hover {
   color: #2196f3;
+}
+
+.menu-close__icon {
+  fill: #212121;
+}
+
+.menu-close__icon:hover {
+  fill: #2196f3;
 }
 
 .mobile__nav {
