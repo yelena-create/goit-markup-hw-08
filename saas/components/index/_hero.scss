@@ -66,16 +66,16 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 height: 120px;
 margin: 0 auto;
-// margin-bottom: 30px;
-  @media screen and (min-width: 768px){
-      width: 360px;
-  }  
-  @media screen and (min-width: 1200px){
+@media screen and (min-width: 768px){
+  width: 360px;
+}  
+@media screen and (min-width: 1200px){
   width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
   }
 }
 

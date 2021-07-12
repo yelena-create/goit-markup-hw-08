@@ -10,23 +10,25 @@
   /* padding: 8px; */
   transition: transform $time $cubic;
   color: $main-text-color;
-margin-bottom: auto;
+// margin-bottom: auto;
 display: flex;
 flex-direction: column;
 }
-.menu__close{
-  padding: 10px;
+// .mobile-menu--wrapper{
+//   position: relative;
+//   display: block;
+// }
+.menu__close-icon{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
-  transform: translate(-8px, +8px);
+  // transform: translate(-8px, +8px);
   color: $menu-color;
   background-color: $background-color;
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  transition: transform $time $cubic, color $time $cubic;
+  border: none;
+  // transition: transform $time $cubic, color $time $cubic;
   &:hover {
     color: $accent-color;
   }
