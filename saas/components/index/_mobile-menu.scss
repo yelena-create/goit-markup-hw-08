@@ -11,19 +11,21 @@
   transition: transform $time $cubic;
   color: $main-text-color;
 // margin-bottom: auto;
+@media screen and (min-width: 480px){
+max-width: 480px;
+}
 }
 .mobile-menu__wrapper{
   position: relative;
   display: flex;
   flex-direction: column;
-    @media screen and (min-width: 480px){
-    max-width: 480px;
-  }
+
 }
 .menu-close{
   position: absolute;
   top: -30px;
-  right: -15px;
+  right: -30px;
+  fill: #212121;
   // transform: translate(-8px, +8px);
   border: none;
   // transition: transform $time $cubic, color $time $cubic;
