@@ -35,10 +35,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-  & .portfolio-box__card-item {
-    display: block;
-    text-decoration: none;
-  }
+
   @media screen and (min-width: 480px) {
     width: 370px;
   }
@@ -53,7 +50,10 @@
     flex-basis: calc(100% / 3 - 30px);
   }
 }
-
+.portfolio-box__card-item {
+  display: block;
+  text-decoration: none;
+}
 .portfolio-box__card-heading {
   display: block;
   // @media screen and (min-width: 768px) {

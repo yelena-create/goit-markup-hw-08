@@ -1625,11 +1625,6 @@ li {
           transform: translateY(0);
 }
 
-.portfolio-box__card-list .portfolio-box__card-item {
-  display: block;
-  text-decoration: none;
-}
-
 @media screen and (min-width: 480px) {
   .portfolio-box__card-list {
     width: 370px;
@@ -1652,6 +1647,11 @@ li {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
+}
+
+.portfolio-box__card-item {
+  display: block;
+  text-decoration: none;
 }
 
 .portfolio-box__card-heading {
