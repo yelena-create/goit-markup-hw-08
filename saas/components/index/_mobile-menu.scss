@@ -10,7 +10,7 @@
   /* padding: 8px; */
   transition: transform $time $cubic;
   color: $main-text-color;
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   // margin-bottom: auto;
@@ -20,25 +20,22 @@
 }
 .menu-close {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 15px;
-  fill: #212121;
+  content: '';
+  display: inline-block;
+  background-color: #fff;
+  background-image: url(/image/icons/mobile-close.svg);
+  // fill: #212121;
   width: 40px;
   height: 40px;
-  // transform: translate(-8px, +8px);
   border: none;
-  // transition: transform $time $cubic, color $time $cubic;
-  &:hover {
-    color: $accent-color;
+  &:hover .menu-close__icon {
+    fill: $accent-color;
   }
 }
 .menu-close__icon {
-  // content: "";
-  // background-image: url(/image/mobile-close.svg);
-  fill: #212121;
-  &:hover {
-    fill: $accent-color;
-  }
+  fill: tomato;
 }
 .mobile__nav {
   display: flex;
@@ -67,11 +64,15 @@
 }
 
 .contacts__mobile-link-phone {
+  font-size: 28px;
   font-weight: 500;
-  font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 .link--mobile {
   text-decoration: none;
@@ -103,7 +104,7 @@ li {
   text-decoration: none;
   color: $accent-color;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
   &::after {
@@ -112,5 +113,8 @@ li {
     right: -11px;
     content: '|';
     color: $main-text-color;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
   }
 }
