@@ -38,7 +38,9 @@
   & .portfolio-box__card-item {
     display: block;
     text-decoration: none;
-    // max-width: 370px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 370px;
   }
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;

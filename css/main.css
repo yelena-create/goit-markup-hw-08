@@ -1629,6 +1629,12 @@ li {
   text-decoration: none;
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio-box__card-list {
+    width: 370px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-box__card-list {
     -ms-flex-wrap: wrap;
