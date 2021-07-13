@@ -1604,6 +1604,7 @@ li {
   text-align: left;
   margin-top: 30px;
   margin-left: 30px;
+  max-width: 370px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
