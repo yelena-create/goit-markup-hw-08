@@ -15,33 +15,32 @@ h3 {
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (min-width: 480px){
+  @media screen and (min-width: 480px) {
     max-width: 480px;
   }
-    @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     max-width: 768px;
   }
 
-    @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
 }
-  section{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin: 0 auto;
-        @media screen and (min-width: 768px){
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
     // max-width: 768px;
   }
 
-    @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     // max-width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
 }
-img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -54,14 +53,14 @@ img{
   margin-bottom: 50px;
   text-align: center;
 }
-.visually-hidden{
+.visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0 );
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
 }
-button{
+button {
   border: none;
   // display: block;
   padding: 0;

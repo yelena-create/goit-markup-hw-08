@@ -6,56 +6,54 @@
 .footer__container {
   margin: 0 auto;
   padding: 60px 15px;
-    @media screen and (min-width: 480px){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 480px) {
     max-width: 480px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
-    @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     max-width: 768px;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
   }
 
-    @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
     flex-wrap: nowrap;
     align-items: flex-start;
   }
-.footer__wrapper{
-  margin-bottom: 60px;
-      @media screen and (min-width: 1200px){
-   margin-bottom: 0;
+  .footer__wrapper {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
-
 }
-}
-.footer__secondary-color{
+.footer__secondary-color {
   color: $background-color;
 }
 .footer__contacts {
   color: $background-color;
 }
-.link--invers{
-color: rgba(255, 255, 255, 0.6);text-decoration: none;
+.link--invers {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .footer__logo {
   width: 154px;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 20px;
-      @media screen and (min-width: 1200px){
-  width: 100%;
-      }
-
-
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .adress--footer,
-.contacts__item--footer{
+.contacts__item--footer {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
@@ -67,25 +65,24 @@ color: rgba(255, 255, 255, 0.6);text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-      @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
     align-items: flex-start;
   }
-
 }
-.footer__social{
+.footer__social {
   margin-left: 70px;
   margin-right: 90px;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px){
-margin-left: 165px;
-margin-right: 0;
-margin-bottom: 100px;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-right: 0;
+    margin-bottom: 100px;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-left: 70px;
-  margin-right: 90px;
+    margin-right: 90px;
   }
 }
 .footer__form-label,
@@ -98,42 +95,36 @@ margin-bottom: 100px;
   margin-bottom: 20px;
   text-align: left;
 }
-.footer__social-title{
- text-align: center;
-      @media screen and (min-width: 1200px){
-  text-align: left;
-    
+.footer__social-title {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
-
 }
-.footer__social-list{
+.footer__social-list {
   display: flex;
   flex-direction: row;
-
 }
 .footer__social-item {
   display: flex;
   flex-direction: row;
   justify-content: center;
-    & .button-social {
+  & .button-social {
     background: rgba(255, 255, 255, 0.1);
     fill: $background-color;
     border-radius: 50%;
-      transition: background-color $time $cubic;
-    margin: 0;}
-    &:hover,
-    &:focus {
-      border-radius: 50%;
+    transition: background-color $time $cubic;
+    margin: 0;
+  }
+  &:hover,
+  &:focus {
+    border-radius: 50%;
     background-color: $accent-color;
+  }
 }
-
-  } 
-  .footer__social-item:not(:last-child) {
-    margin-right: 10px;
-    }
-
-
-
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
 
 .footer__form {
   position: relative;
@@ -141,9 +132,9 @@ margin-bottom: 100px;
   padding-top: 36px;
   flex-direction: column;
   // margin-bottom: 60px;
-  @media screen and (min-width: 1200px){
-        flex-direction: row;
-        margin-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-bottom: 0;
   }
 }
 .submit--footer {
@@ -160,13 +151,12 @@ margin-bottom: 100px;
     width: 24px;
     height: 24px;
     background-image: url(../image/icons/icon-send.svg);
-      }
-      transform: scale(1);
-      margin: 0 auto;
-      @media screen and (min-width: 1200px){
-        margin-left: 12px;
-         }
-
+  }
+  transform: scale(1);
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .footer__form-label {
   position: absolute;
@@ -175,10 +165,9 @@ margin-bottom: 100px;
   color: $background-color;
   margin: 0;
   padding: 0;
-      @media screen and (min-width: 1200px){
-  left: 0;
+  @media screen and (min-width: 1200px) {
+    left: 0;
   }
-
 }
 .footer__form-input {
   display: block;
@@ -191,8 +180,7 @@ margin-bottom: 100px;
   border-radius: 4px;
   color: $background-color;
   margin-bottom: 20px;
-      @media screen and (min-width: 1200px){
-margin-bottom: 0;
-      }
-
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
