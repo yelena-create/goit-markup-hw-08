@@ -38,15 +38,17 @@
   & .portfolio-box__card-item {
     display: block;
     text-decoration: none;
-    width: 354px;
-    @media screen and (min-width: 768px) {
-      max-width: 370px;
-      flex-wrap: wrap;
-      flex-basis: calc(100% / 2 - 30px);
-    }
-    @media screen and (min-width: 1200px) {
-      flex-basis: calc(100% / 3 - 30px);
-    }
+    // max-width: 370px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    max-width: 354px;
+
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 

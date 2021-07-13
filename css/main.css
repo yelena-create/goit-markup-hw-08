@@ -1627,21 +1627,21 @@ li {
 .portfolio-box__card-list .portfolio-box__card-item {
   display: block;
   text-decoration: none;
-  width: 354px;
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-box__card-list .portfolio-box__card-item {
-    max-width: 370px;
+  .portfolio-box__card-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 354px;
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio-box__card-list .portfolio-box__card-item {
+  .portfolio-box__card-list {
+    max-width: 370px;
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
