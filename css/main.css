@@ -1128,6 +1128,9 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media screen and (min-width: 1200px) {
