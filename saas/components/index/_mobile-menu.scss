@@ -10,23 +10,22 @@
   /* padding: 8px; */
   transition: transform $time $cubic;
   color: $main-text-color;
+   position: relative;
+  display: flex;
+  flex-direction: column;
 // margin-bottom: auto;
 @media screen and (min-width: 480px){
 max-width: 480px;
 }
 }
-.mobile-menu__wrapper{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-}
 .menu-close{
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: 20px;
+  right: 15px;
   fill: #212121;
-  // transform: translate(-8px, +8px);
+  width: 40px;
+  height: 40px;
+    // transform: translate(-8px, +8px);
   border: none;
   // transition: transform $time $cubic, color $time $cubic;
   &:hover {
