@@ -4,6 +4,7 @@
   margin-right: -30px;
   justify-content: space-evenly;
   @media screen and (min-width: 1200px) {
+    max-width: 1200px;
     flex-wrap: nowrap;
     margin-right: 0;
   }
@@ -12,13 +13,8 @@
   margin-bottom: 30px;
   justify-content: space-evenly;
   margin-right: 30px;
-  // flex-basis: calc(100% / 2 - 30px);
-  // max-width: 180px;
-  // margin-left: auto;
-  // margin-right: auto;
-
+  width: 170px;
   @media screen and (min-width: 480px) {
-    // max-width: 226px;
     flex-basis: calc(100% / 2 - 30px);
   }
 
@@ -43,7 +39,6 @@
     outline: none;
   }
   @media screen and (min-width: 768px) {
-    width: 226px;
   }
 }
 .client__item:not(:last-child) {

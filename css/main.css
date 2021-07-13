@@ -1135,6 +1135,7 @@ li {
 
 @media screen and (min-width: 1200px) {
   .client__list {
+    max-width: 1200px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-right: 0;
@@ -1147,6 +1148,7 @@ li {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-right: 30px;
+  width: 170px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1182,12 +1184,6 @@ li {
 .client__icon:hover, .client__icon:focus {
   border: 1px solid #2196f3;
   outline: none;
-}
-
-@media screen and (min-width: 768px) {
-  .client__icon {
-    width: 226px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
