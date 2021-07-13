@@ -11,7 +11,15 @@
   margin-bottom: 30px;
   justify-content: space-evenly;
   margin-right: 30px;
-  flex-basis: calc(100% / 2 - 30px);
+  // flex-basis: calc(100% / 2 - 30px);
+  // max-width: 180px;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    // max-width: 226px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
@@ -32,6 +40,9 @@
   &:focus {
     border: 1px solid $accent-color;
     outline: none;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
   }
 }
 .client__item:not(:last-child) {
