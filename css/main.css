@@ -386,13 +386,11 @@ header {
   position: absolute;
   top: 25px;
   right: 15px;
-  content: '';
-  display: inline-block;
-  background-color: #fff;
-  background-image: url(/image/icons/mobile-close.svg);
+  fill: #212121;
   width: 40px;
   height: 40px;
   border: none;
+  background-color: #fff;
 }
 
 .menu-close:hover .menu-close__icon {
@@ -400,7 +398,7 @@ header {
 }
 
 .menu-close__icon {
-  fill: tomato;
+  fill: #212121;
 }
 
 .mobile__nav {
