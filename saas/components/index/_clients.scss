@@ -3,16 +3,6 @@
   flex-wrap: wrap;
   margin-right: -30px;
   justify-content: space-evenly;
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    flex-wrap: nowrap;
-    margin-right: 0;
-  }
-}
-.client__item {
-  justify-content: space-evenly;
-  margin-right: 30px;
-  width: 170px;
   @media screen and (min-width: 480px) {
     flex-basis: calc(100% / 2 - 30px);
   }
@@ -20,6 +10,28 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
   }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+  }
+
+
+}
+.client__item {
+  justify-content: space-evenly;
+  margin-right: 30px;
+  width: 170px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+
 }
 .client__icon {
   display: block;
