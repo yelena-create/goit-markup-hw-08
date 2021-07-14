@@ -24,13 +24,10 @@
   //     // flex-basis: calc(100%/2 - 30px);
   //    }
  
-  //   @media screen and (min-width: 1200px){
-  //     display: flex;
-  //     // flex-wrap: nowrap;
-  //       //     &.team-card__card:not(:last-child) {
-  //       // margin-right: 30px;
-  //       //   }
-  //     }
+    @media screen and (min-width: 1200px){
+      display: flex;
+      flex-wrap: nowrap;
+}
 }
 .team-card__card {
   border-bottom: 1px solid;

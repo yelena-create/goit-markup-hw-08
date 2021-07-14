@@ -1031,6 +1031,16 @@ li {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1200px) {
+  .team-card__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .team-card__card {
   border-bottom: 1px solid;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
