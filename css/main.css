@@ -1061,6 +1061,8 @@ li {
 @media screen and (min-width: 1200px) {
   .team-card__card {
     margin-bottom: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
