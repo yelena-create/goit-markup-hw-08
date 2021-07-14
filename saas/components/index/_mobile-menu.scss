@@ -15,8 +15,11 @@
   flex-direction: column;
   // margin-bottom: auto;
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    max-width: 768px;
   }
+    @media screen and (min-width: 768px) {
+display: none;  }
+
 }
 .menu-close {
   position: absolute;
@@ -46,14 +49,14 @@
 .mobile__nav-item {
   margin-bottom: 32px;
 }
-.link-mobile {
+.mobile-menu__link-mobile {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   text-align: center;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: $menu-color;
+  color: $main-text-color;
 }
 .link-current-mobile {
   color: $accent-color;
