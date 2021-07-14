@@ -923,10 +923,6 @@ li {
   margin: 0 auto;
 }
 
-.features__column:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 1200px) {
   .features__column:not(:last-child) {
     margin-right: 30px;
@@ -1168,7 +1164,6 @@ li {
 }
 
 .client__item {
-  margin-bottom: 30px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
